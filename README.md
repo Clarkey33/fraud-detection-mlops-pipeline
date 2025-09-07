@@ -44,7 +44,7 @@ This project uses a curated set of modern, open-source tools to build the pipeli
 
 | Category                 | Tool                 | Purpose                                                                 |
 |--------------------------|----------------------|-------------------------------------------------------------------------|
-| Environment & Dependencies| uv                   | Ultra-fast Python project and environment management.                   |
+| Environment/Dependencies| uv                   | Ultra-fast Python project and environment management.                   |
 | Data & Model Versioning  | Git / DVC            | Git for code versioning; DVC for versioning large data and models.      |
 | Experiment Tracking      | MLflow               | Tracking parameters, metrics, and model artifacts for every run.        |
 | CI/CD Automation         | GitHub Actions       | Automating the entire workflow from testing to model validation.        |

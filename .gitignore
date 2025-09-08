@@ -9,9 +9,9 @@ wheels/
 # Virtual environments
 .venv
 
-#Data
-data/raw/
-data/processed/
+# Data - DVC will track these
+#data/raw/
+#data/processed/
 
 # MLflow
 mlruns/

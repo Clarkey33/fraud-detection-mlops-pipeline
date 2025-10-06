@@ -1,0 +1,9 @@
+stages:
+  preprocess:
+    cmd: python3 src/preprocessing.py --train-input data/raw/fraudTrain.csv --test-input data/raw/fraudTest.csv --output-dir data/processed
+    deps:
+      - src/preprocessing.py
+      - data/raw/fraudTrain.csv
+      - data/raw/fraudTest.csv
+    outs:
+      - data/processed

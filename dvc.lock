@@ -1,0 +1,24 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python3 src/preprocessing.py --train-input data/raw/fraudTrain.csv 
+      --test-input data/raw/fraudTest.csv --output-dir data/processed
+    deps:
+    - path: data/raw/fraudTest.csv
+      hash: md5
+      md5: 692357a2589a1a6fcd44f14b3e1f9d2c
+      size: 150354339
+    - path: data/raw/fraudTrain.csv
+      hash: md5
+      md5: 9723893e5492dc0551036edcf596e284
+      size: 351238196
+    - path: src/preprocessing.py
+      hash: md5
+      md5: 92b14c76d0ca091b46aa156456b73b1c
+      size: 3147
+    outs:
+    - path: data/processed
+      hash: md5
+      md5: 89c2c75332d7f232ec40c27b8b47d67e.dir
+      size: 140541337
+      nfiles: 2
